@@ -1,11 +1,9 @@
-import './bootstrap';
-
 import Vue from 'vue';
-import WeatherComponent from './components/WeatherComponent.vue';
+import WeatherBar from './components/WeatherBar.vue';
+
+// Register the component globally
+Vue.component('weather-bar', WeatherBar);
 
 const app = new Vue({
-  el: '#app',
-  components: {
-    WeatherComponent
-  }
+  el: '#app'
 });
